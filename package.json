@@ -1,39 +1,39 @@
 {
-	"name": "next-script",
-	"version": "0.0.1",
-	"main": "src/index.js",
-	"bin": {
-		"next-firebase": "src/index.js"
-	},
-	"dependencies": {
-		"chalk": "^4.1.0",
-		"fs-extra": "^9.0.1",
-		"system-commands": "^1.1.7",
-		"yargs": "^15.4.1"
-	},
-	"keywords": [
-		"next",
-		"next.js",
-		"nextjs",
-		"firebase",
-		"next-firebase",
-		"nextjs-firebase",
-		"next.js-firebase",
-		"firebase-next.js"
-	],
-	"homepage": "https://github.com/giridhar7632/next-script#readme",
-	"bugs": {
-		"url": "https://github.com/giridhar7632/next-script/issues",
-		"email": "giridhar.talla2002@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/giridhar7632/next-script.git"
-	},
-	"author": {
-		"name": "Giridhar Talla",
-		"email": "giridhar.talla2002@gmail.com",
-		"url": "https://github.com/giridhar7632"
-	},
-	"license": "MIT"
+  "name": "next-script",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "bin": {
+    "next-firebase": "src/index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "fs-extra": "^9.0.1",
+    "system-commands": "^1.1.7",
+    "yargs": "^15.4.1"
+  },
+  "keywords": [
+    "next",
+    "next.js",
+    "nextjs",
+    "firebase",
+    "next-firebase",
+    "nextjs-firebase",
+    "next.js-firebase",
+    "firebase-next.js"
+  ],
+  "homepage": "https://github.com/giridhar7632/next-script#readme",
+  "bugs": {
+    "url": "https://github.com/giridhar7632/next-script/issues",
+    "email": "giridhar.talla2002@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giridhar7632/next-script.git"
+  },
+  "author": {
+    "name": "Giridhar Talla",
+    "email": "giridhar.talla2002@gmail.com",
+    "url": "https://github.com/giridhar7632"
+  },
+  "license": "MIT"
 }
