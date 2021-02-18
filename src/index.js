@@ -7,7 +7,7 @@ const system = require('system-commands')
 const chalk = require('chalk')
 
 const static = Boolean(argv.static)
-let name = argv._
+let [name] = argv._
 
 const mkdir = path =>
   fs.mkdir(`${name}/${path}`)
@@ -264,7 +264,9 @@ a {
 if (require.main === module)
 	(async () => {
 		try {
-			
+			if (!(typeof name === 'string'))
+				return console.log(chalk`{red.bold npx next-firebase [project_name]}`)
+
 			name = name.replace(/\s+/g, '-').toLowerCase()
 			
 			console.log(chalk`\n{cyan.bold [START]} {cyan Creating your Next.js app in} {cyan.bold ${join(process.cwd(), name)}}\n`)
