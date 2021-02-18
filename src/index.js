@@ -264,9 +264,6 @@ a {
 if (require.main === module)
 	(async () => {
 		try {
-			if (!(typeof name === 'string')){
-        return console.log(chalk`{red.bold npx @giridhar7632/next-script [project_name]}`)
-      }
 			
 			name = name.replace(/\s+/g, '-').toLowerCase()
 			
