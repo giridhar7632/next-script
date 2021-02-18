@@ -44,7 +44,7 @@ const makeRoot = async () => {
 
       ## Getting started 🚀
       \`\`\`
-      npx next-script my-app
+      npx @giridhar7632/next-script my-app
       \`\`\`
 
       ## Run dev server 👨‍💻
@@ -264,8 +264,9 @@ a {
 if (require.main === module)
 	(async () => {
 		try {
-			if (!(typeof name === 'string'))
-				return console.log(chalk`{red.bold npx next-script [project_name]}`)
+			if (!(typeof name === 'string')){
+        return console.log(chalk`{red.bold npx @giridhar7632/next-script [project_name]}`)
+      }
 			
 			name = name.replace(/\s+/g, '-').toLowerCase()
 			

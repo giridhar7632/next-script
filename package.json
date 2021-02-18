@@ -1,9 +1,9 @@
 {
-  "name": "next-script",
+  "name": "@giridhar7632/next-script",
   "version": "0.0.1",
   "main": "src/index.js",
   "bin": {
-    "next-firebase": "src/index.js"
+    "next-script": "src/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.0",
@@ -14,12 +14,7 @@
   "keywords": [
     "next",
     "next.js",
-    "nextjs",
-    "firebase",
-    "next-firebase",
-    "nextjs-firebase",
-    "next.js-firebase",
-    "firebase-next.js"
+    "nextjs"
   ],
   "homepage": "https://github.com/giridhar7632/next-script#readme",
   "bugs": {
