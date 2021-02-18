@@ -92,7 +92,7 @@ const makeRoot = async () => {
       '.vercel'
 		].join('\n')),
     // .env
-    writrFile('.env', [
+    writeFile('.env', [
       'NEXT_PUBLIC_FIREBASE_API_KEY=',
       'NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=',
       'NEXT_PUBLIC_FIREBASE_PROJECT_ID='
