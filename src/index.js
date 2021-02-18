@@ -25,7 +25,7 @@ const makeRoot = async () => {
 
   await Promise.all([
     // package.json
-    writeFile('public/package.json', json({
+    writeFile('package.json', json({
       name,
       version: '1.0.0',
       scripts: {
