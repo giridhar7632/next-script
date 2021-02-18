@@ -41,30 +41,26 @@ const makeRoot = async () => {
     writeFile(
       'README.md',
       `# ${name}
+## Getting started 🚀
+\`\`\` bash
+npx @giridhar7632/next-script my-app
+\`\`\`
+## Run dev server 👨‍💻
+\`\`\`bash
+npm run dev
+\`\`\`
+## Build 🤹‍♂️
+\`\`\`bash
+npm run build
+\`\`\`
+## Learn More 📃
+To learn more about Next.js, take a look at the following resources:
 
-      ## Getting started 🚀
-      \`\`\`
-      npx @giridhar7632/next-script my-app
-      \`\`\`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-      ## Run dev server 👨‍💻
-      \`\`\`bash
-      npm run dev
-      \`\`\`
-
-      ## Build 🤹‍♂️
-      \`\`\`bash
-      npm run build
-      \`\`\`
-      
-      ## Learn More 📃
-      To learn more about Next.js, take a look at the following resources:
-
-      - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-      - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-      You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-      `),
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`),
       // gitignore
       writeFile('.gitignore', [
 			'# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.', ' ',
@@ -113,14 +109,12 @@ const makeFolders = async () => {
   ])
 
   await Promise.all([
-		// public
-		system(`cp ${join(__dirname, '../assets/favicon.ico')} ${name}/public`),
+    system(`cp ${join(__dirname, '../assets/favicon.ico')} ${name}/public`),
     system(`cp ${join(__dirname, '../assets/vercel.svg')} ${name}/public`),
-
     // pages
     // _app.js
     writeFile('pages/_app.js', `
-    import '../styles/globals.css'
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />
@@ -130,7 +124,7 @@ export default MyApp
     `),
     // index.js
     writeFile('pages/index.js', `
-    import Head from 'next/head'
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -167,7 +161,7 @@ export default (req, res) => {
     // styles
     // globals.css
     writeFile('styles/globals.css', `
-    html,
+html,
 body {
 	padding: 0;
 	margin: 0;
@@ -187,7 +181,7 @@ a {
     `),
     // home.module.css
     writeFile('styles/Home.module.css', `
-    .container {
+.container {
 	min-height: 100vh;
 	padding: 0 0.5rem;
 	display: flex;
